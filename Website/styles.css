@@ -2,6 +2,10 @@
 	border-radius: 30px;
 }
 
+.roundElementBig {
+  border-radius: 250px;
+}
+
 .parallax-container {
     width: 2048px;
     height: 1065px;
