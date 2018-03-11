@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--Import Google Icon Font--> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile--> <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="D:\Spring 2018\life-hacks\Website\styles.css" rel="stylesheet">
+    <title>Life Hacks</title>
+  </head>
+  <body class="parallax" background="D:\Spring 2018\life-hacks\Website\home picture-3.jpg">
+
+
+    <div class="container center">
+      <div class="card-panel brown darken-2">
+        <img class="" src="D:\Spring 2018\life-hacks\Website\logo.png" alt="">
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="card-panel center">
+          <div class="row">
+            <div class="input-field col s6">
+                  <input placeholder="Name your hack:" id="first_name" type="text" class="validate">
+                  <label class="yellow-text text-darken-2 active" for="hack_title">Hack Title</label>
+                </div>
+   <form class="col s12">
+     <div class="row">
+       <div class="input-field col s12">
+         <textarea id="textarea1" class="materialize-textarea"></textarea>
+         <label class="yellow-text text-darken-2 active" for="textarea1">Describe your hack:</label>
+
+       </div>
+     </div>
+   </form>
+
+         <form class = "col s12"
+            <div class = "row">
+               <label class="yellow-text text-darken-2 left">Choose your tags:</label>
+               <select class="browser-default active">
+                 <option class="yellow-text text-darken-2" value="" disabled selected>Tags</option>
+                 <option class="yellow-text text-darken-2" value="AL">Train</option>
+                 <option class="yellow-text text-darken-2" value="AK">Cars</option>
+                 <option class="yellow-text text-darken-2" value="AZ">General</option>
+               </select>
+
+         </form>
+
+ </div>
+ <a href= "D:\Spring 2018\life-hacks\Website\Hack created.html" class="brown darken-1 waves-effect waves-light btn-large roundElement">Make my hack!</a>
+
+        </div>
+      </div>
+      </div>
+
+      </div>
+
+
+
+
+  <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.parallax').parallax();
+        });
+        $('#textarea1').val('');
+        $('#textarea1').trigger('autoresize');
+    </script>
+
+  </body>
+</html>
