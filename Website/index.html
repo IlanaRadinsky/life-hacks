@@ -4,37 +4,41 @@
     <!--Import Google Icon Font--> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!--Let browser know website is optimized for mobile--> <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="D:Computer Science/Charity/styles.css" rel="stylesheet">
-    <title>Charity</title>
+    <link href="D:\Spring 2018\life-hacks\Website\styles.css" rel="stylesheet">
+    <title>Life Hacks</title>
   </head>
-  <body class="parallax" background="D:Computer Science/Charity/home picture-3.jpg">
+  <body class="parallax" background="D:\Spring 2018\life-hacks\Website\home picture-3.jpg">
 
 
     <div class="container center">
-      <div class="card-panel   lime darken-4">
-        <h2 class="white-text bold">What would you like to donate?</h2>
+      <div class="card-panel lime darken-4">
+        <img class="resize" src="D:\Spring 2018\life-hacks\Website\life hacks.png" alt="">
       </div>
     </div>
 
   <div class="container">
     <div class="row">
-      <div class="col l4">
         <div class="card-panel center">
-          <a onclick="location.href = 'D:/Fall 2017/Intro to Computer Science/Charity/money.html';" class="brown darken-1 waves-effect waves-light btn-large roundElement"><i class="material-icons left">attach_money</i>Money</a>
+          <div class="row">
+            <div class="input-field col s6">
+                  <input placeholder="Name your hack:" id="first_name" type="text" class="validate">
+                  <label class="yellow-text text-darken-2 active" for="hack_title">Hack Title</label>
+                </div>
+   <form class="col s12">
+     <div class="row">
+       <div class="input-field col s12">
+         <textarea id="textarea1" class="materialize-textarea"></textarea>
+         <label class="yellow-text text-darken-2 active" for="textarea1">Describe your hack:</label>
+
+       </div>
+     </div>
+   </form>
+ </div>
+          <a onclick="location.href = 'D:\Spring 2018\life-hacks\Website\money.html';" class="brown darken-1 waves-effect waves-light btn-large roundElement">Submit</a>
         </div>
       </div>
-      <div class="col l4">
-        <div class="card-panel center">
-          <a onclick="location.href = 'D:/Computer Science/Charity/money.html';" class="brown darken-1 waves-effect waves-light btn-large roundElement"><i class="material-icons left">access_time</i>Time</a>
-        </div>
+
       </div>
-      <div class="col l4">
-        <div class="card-panel center">
-          <a onclick="location.href = 'D:/Computer Science/Charity/money.html';" class="brown darken-1 waves-effect waves-light btn-large roundElement"><i class="material-icons left">accessibility</i>Items</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -46,6 +50,8 @@
       $(document).ready(function(){
       $('.parallax').parallax();
         });
+        $('#textarea1').val('');
+        $('#textarea1').trigger('autoresize');
     </script>
 
   </body>

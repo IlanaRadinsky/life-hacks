@@ -7,6 +7,8 @@
     height: 1065px;
    }
 .resize {
-    width: 2048px;
-    height: 1065px;
+    width: 537px;
+    height: 149px;
    }
+$('#textarea1').val('New Text');
+$('#textarea1').trigger('autoresize');
