@@ -33,7 +33,7 @@ create table HacksTags(
 	name CHAR(40),
     hackID INTEGER,
     PRIMARY KEY (name, hackID),
-    FOREIGN KEY (name) REFERENCES TagNames(name),
+    FOREIGN KEY (name) REFERENCES Tags(name),
     FOREIGN KEY (hackID) REFERENCES Hacks(hackID)
     );
     
